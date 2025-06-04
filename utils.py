@@ -6,11 +6,13 @@ def clave_valor_string(diccionario):
 
     return clave_valor
 
-def suma_digitos(conjunto):
-    print(conjunto)
+def suma_digitos(list_dni):
     sum_dic = {}
     contador = 1
-    for n in conjunto:
-        
+    for dni in list_dni:
+        suma = 0
+        for n in dni:
+            suma += int(n)
+        sum_dic[contador] = suma
         contador += 1
     return sum_dic

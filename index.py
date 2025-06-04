@@ -58,7 +58,8 @@ while operación != 0:
         print(f"\nDiferencia simetrica: {diferencia_simetrica}\n")
 
     elif operación == "5":
-        print(f'Sumatoria de los digitos de los DNI: {utils.suma_digitos(conjuntos_str)}')
+        suma_dnis = utils.suma_digitos(conjuntos_str)
+        print(f'Sumatoria de los digitos de los DNI: \n{utils.clave_valor_string(suma_dnis)}')
 
     elif operación == "0":
         print("\nGracias por usar la calculadora de conjuntos.")
